@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #1e1b2e;
+  color: #f5f3ff;
+  min-height: 100vh;
+  padding: 8px;
+}
+
+body > div {
+  margin: 0px auto;
+  background-color: #2a2359;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100%;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+}
+
+nav ul li a {
+  color: #f5f3ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ddd6fe;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #4c1d95;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f5f3ff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor > div {
+  width: 500px;
+  height: 500px;
+  background-color: #2a2359;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.contenedor > div > h1 {
+  font-size: 40px;
+  color: #f5f3ff;
+  margin: 0px;
+}
+
+.contenedor > div > p {
+  font-size: 20px;
+  color: #f5f3ff;
+  margin-top: 1.5em;
+}
+
+.contenedor > img {
+  width: 700px;
+  height: 100%;
+  clip-path: polygon(
+    50% 0%,
+    69.1% 26.28%,
+    100% 36.32%,
+    76.28% 62.93%,
+    80.9% 95.1%,
+    50% 85.04%,
+    19.1% 95.1%,
+    21.11% 61.95%,
+    0% 36.32%,
+    30.9% 26.28%
+  );
+  transform: rotate(5deg);
+}
+
+.habilidades-contenedor {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.habilidades-contenedor h1 {
+  color: #deb0ff;
+  margin-bottom: 30px;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tarjeta {
+  background-color: #ffffff;
+
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(158, 21, 255, 0.435);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta h2 {
+  color: #8e44ad;
+  margin-bottom: 10px;
+}
+
+.tarjeta p {
+  color: #2c2c2c;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(140, 2, 239, 0.571);
+}

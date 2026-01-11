@@ -1,0 +1,68 @@
+form {
+  padding: 20px;
+  background-color: #dfccfb;
+  max-width: 400px;
+  margin: 40px auto;
+  border-radius: 12px;
+}
+
+table {
+  width: 100%;
+}
+
+input[type='text'] {
+  width: 100%;
+  height: 50px;
+  font-size: 22px;
+  text-align: right;
+  padding-right: 10px;
+  background-color: #1e1b2e;
+  color: #f5f3ff;
+  border: none;
+  border-radius: 8px;
+}
+
+td {
+  padding: 6px;
+  text-align: center;
+}
+
+.tecla {
+  width:50px;
+  height: 50px;
+  border-radius: 999px;
+  font-size: 18px;
+  background-color: #6d28d9;
+  color: #f5f3ff;
+  border: none;
+
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  padding: 4px;
+}
+
+.tecla:hover {
+  background-color: #8b5cf6;
+}
+
+.tecla:active {
+  transform: scale(0.97);
+}
+
+button[value='limpiar'] {
+  background-color: #7c3aed;
+  width: 100%;
+}
+
+button[value='limpiar']:hover {
+  background-color: #a78bfa;
+}
+
+button[value='igualar'] {
+  background-color: #9333ea;
+  font-weight: bold;
+}
+
+button[value='igualar']:hover {
+  background-color: #c084fc;
+}
